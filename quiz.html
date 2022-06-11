@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/quizstyle.css">
+    <title>Quiz MAO</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">M.a.o Nation</a></li>
+            </ul>
+            <ul>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>MAO Nation</h1>
+    
+        <article class="article">
+    
+            <h2>Bienvenu au Quizz</h2>
+    
+    
+            <div>
+                <h3>Q1: Quesque la MAO ?</h3>
+                <p id="q1R1">A: Un dictateur en Asie</p>
+                <p id="q1R2">B: Un cole de chemise </p>
+                <p id="q1R3">C: La Musique Assisté par Ordinateur</p>
+    
+                <select name="quest1" id="quest1">
+                
+                    <option value="rep1">A</option>
+                    <option value="rep2">B</option>
+                    <option value="rep3">C</option>
+    
+                </select>
+    
+            </div>
+            
+    
+            <div>
+                <h3>Q2: Que signifie Stan ?</h3>
+                <p id="q2R1">A: Le nom d'un personnage de South-Park</p>
+                <p id="q2R2">B: "Un logiciel" une Station Audio Numerique </p>
+                <p id="q2R3">C: Des lettres ecrites aux hasard</p>
+                <select name="quest2" id="quest2">
+                    
+                    <option value="rep1">A</option>
+                    <option value="rep2">B</option>
+                    <option value="rep3">C</option>
+    
+                </select>
+    
+            </div>
+            
+    
+    
+            <div>
+                <h3>Q3: Que signifie Mastering ?</h3>
+                <p id="q3R1">A: Devenir le maitre suprème</p>
+                <p id="q3R2">B: Réaliser la deffinition du projet, le son final. (Ingénieurie du Son) </p>
+                <p id="q3R3">C: Phase de production par le Mastering dans le Mixage</p>
+                <select name="quest3" id="quest3">
+                    
+                    <option value="rep1">A</option>
+                    <option value="rep2">B</option>
+                    <option value="rep3">C</option>
+    
+                </select>
+    
+            </div>
+            
+    
+    
+            <div>
+                <h3>Q4: Quesque la synthèse soustractive ?</h3>
+                <p id="q4R1">A: La theorie des calcule par soustraction</p>
+                <p id="q4R2">B: Une forme de Composition Audio Numerique pour enlever du son</p>
+                <p id="q4R3">C: Une Algorithme utilisé dans les Synthés Virtuel (VST) pour générer du son</p>
+                <select name="quest4" id="quest4">
+                    
+                    <option value="rep1">A</option>
+                    <option value="rep2">B</option>
+                    <option value="rep3">C</option>
+    
+                </select>
+    
+            </div>
+    
+    
+            <div>
+                <h3>Q5: Quel est le meilleur logiciel de musique par ordinateur ?</h3>
+                <p id="q5R1">A: Ableton Live</p>
+                <p id="q5R2">B: FL Studio</p>
+                <p id="q5R3">C: Aucun</p>
+                <select name="quest5" id="quest5">
+                    
+                    <option value="rep1">A</option>
+                    <option value="rep2">B</option>
+                    <option value="rep3">C</option>
+    
+                </select>
+    
+            </div>
+    
+        </article>
+
+        <section class="validation">
+            <input type="button" value="valider" onclick="maoQuiz()">
+        </section>
+        <section class="resultapanel">
+            <p>Resulta</p>
+            <p id="quizResult"></p>
+        </section>
+
+    </main>
+
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="script/quizscript.js"></script>
+</html>

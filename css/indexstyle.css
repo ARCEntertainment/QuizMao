@@ -1,0 +1,123 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+nav {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid rgba(42, 78, 169, 0.7);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+nav ul #link {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+main .article {
+    display: flex;
+    position: absolute;
+    height: 200px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+main .article h3 {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 5px black;
+
+}
+
+main .article #button {
+    color: rgba(255, 255, 255, 0.62);
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    padding: 25px;
+    margin: 10px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(53, 91, 96, 0.9);
+
+}
+
+main #button:hover {
+    transition-duration: 0.7s;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(157, 227, 213, 0.21);
+    backdrop-filter: blur(8px);
+    font-size: 1.5rem;
+    border-top: 3px solid rgba(255, 255, 255, 0.6);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 0.5px solid rgba(41, 41, 41, 0.6);
+}
+
+main .info {
+    opacity: 0;
+    width: 250px;
+    height: 100vh;
+    color: #fff;
+    margin: 5px 85%;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-top: 4px solid rgba(255, 255, 255, 0.55);
+    border-left: 2.5px solid rgba(255, 255, 255, 0.45);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 32px;
+    backdrop-filter: blur(10px);
+}
+
+main .info h3 {
+    margin-bottom: 20px;
+}

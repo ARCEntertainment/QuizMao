@@ -1,0 +1,182 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorGlobal: rgba(74, 119, 138, 0.9);
+    --colorGdark: rgba(57, 93, 107, 1);
+    --colorGlight: rgba(92, 145, 166, 1);
+    --colorQuestion: rgba(86, 193, 185, 0.5);
+}
+
+
+nav {
+    background-color: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(1.7px);
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid rgba(75, 100, 164, 0.7);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+
+body {
+    background:
+        radial-gradient(var(--colorGdark) 30%, transparent 16%) 0 0,
+        radial-gradient(var(--colorGdark) 30%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: var(--colorGlobal);
+    background-size: 10px 10px;
+    /* background-color: var(--colorGlobal); */
+}
+
+body h1 {
+    text-align: center;
+    color: var(--colorGlight);
+    text-transform: uppercase;
+    text-shadow: 4px 4px 4px var(--colorGdark);
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+body h2 {
+    margin-left: 30px;
+    color: rgb(37, 61, 70);
+    text-shadow: 2px 2px 1px var(--colorGlight);
+}
+
+body main .article {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+main .article div {
+    background: var(--colorGlobal);
+    box-shadow: 12px 12px 16px var(--colorGdark)inset,
+        -8px -8px 12px var(--colorGlight)inset;
+    border-radius: 25px;
+    border: 1px solid var(--colorGlight);
+    overflow: hidden;
+    width: 100%;
+    height: 280px;
+    margin: 1rem;
+    padding: 20px;
+}
+
+main .article h3 {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: var(--colorQuestion);
+    box-shadow: 6px 6px 12px var(--colorGdark),
+        -3px -3px 6px var(--colorGlight);
+    border-radius: 15px;
+}
+
+main .article p {
+    margin: 15px;
+    color: rgb(42, 42, 42);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+main .article select {
+    background: var(--colorGlobal);
+    padding: 10px 50px 10px 15px;
+    margin-left: 20px;
+    border-style: inset;
+    border-color: var(--colorGlight);
+    border-radius: 15px;
+    box-shadow: 6px 6px 12px var(--colorGdark),
+        -3px -3px 6px var(--colorGlight);
+    font-size: 1.2rem;
+    color: rgb(20, 40, 77);
+    font-weight: 600;
+}
+
+main .validation {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+main .validation input {
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 800px;
+    color: var(--colorGlobal);
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 3px 3px 6px var(--colorGdark),
+        -1.5px -1.5px 3px var(--colorGlight);
+    border-radius: 15px;
+    border-top: 3px solid rgba(255, 255, 255, 0.7);
+    border-left: 1px solid rgba(255, 255, 255, 0.476);
+    border-right: 2px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.656);
+    padding: 15px;
+    backdrop-filter: blur(1.6px);
+
+    cursor: pointer;
+}
+
+main .validation input:hover {
+    transition-duration: 1s;
+    background-color: rgba(182, 204, 255, 0.28);
+    font-size: 1.5rem;
+    backdrop-filter: blur(3px);
+    color: rgba(255, 255, 255, 0.4);
+    text-shadow: 8px 8px 10px var(--colorGdark);
+}
+
+main .resultapanel {
+    position: sticky;
+    bottom: 62%;
+    left: 5%;
+    /* top: 1200px; */
+    /* left: 50px; */
+    width: 250px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 3px solid rgba(44, 209, 69, 0.388);
+    box-shadow: 3px 3px 6px var(--colorGdark),
+        -1.5px -1.5px 3px var(--colorGlight);
+    border-radius: 15px;
+    padding: 15px;
+    backdrop-filter: blur(2.7px);
+}
+
+.resultapanel p {
+    margin: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
